@@ -1,0 +1,4 @@
+listenPort: 8080
+cacheLifeTime: 1800
+cleanTimer: 600
+debug: 0

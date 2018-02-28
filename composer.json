@@ -1,0 +1,34 @@
+{
+    "name": "avallac/geoip",
+    "license": "MIT",
+    "type": "project",
+    "homepage": "https://github.com/avallac/geoip",
+    "autoload": {
+        "psr-4": { "AVAllAC\\geoip\\": "src/",  "AVAllAC\\geoip\\Tests\\": "tests/" }
+    },
+    "require": {
+        "php": "^7.1",
+        "react/http": "^0.8.1",
+        "symfony/routing": "^4.0",
+        "pimple/pimple": "^3.2",
+        "symfony/yaml": "^4.0",
+        "maxmind-db/reader": "^1.3"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "php -r \"copy('etc/config.yml.orig', 'etc/config.yml');\"",
+            "php -r \"copy('database/GeoLite2-City_20180206.mmdb', 'database/city.mmdb');\""
+        ]
+    },
+    "require-dev": {
+        "codedungeon/phpunit-result-printer": "^0.5.4",
+        "phpunit/phpunit": "^6.5",
+        "phpunit/php-code-coverage": "^5.3"
+    },
+    "authors": [
+        {
+            "name": "Petr Petrenko",
+            "role": "Developer"
+        }
+    ]
+}
