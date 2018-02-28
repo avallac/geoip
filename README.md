@@ -18,7 +18,7 @@ GeoIP [![Build Status](https://img.shields.io/travis/avallac/geoip.svg)](https:/
 2. При необходимости отредактируйте geoip/etc/config.yml:
 ```
 listenPort: Номер слушающего порта
-cacheTimeOut: Срок жизни кэшированных записей. В секундах.
+cacheLifeTime: Срок жизни кэшированных записей. В секундах.
 cleanTimer: Интервал очистки старых записей. В секундах.
 ```
 3. Запустите ```php ./geoip/bin/geo_ip_server.php```
